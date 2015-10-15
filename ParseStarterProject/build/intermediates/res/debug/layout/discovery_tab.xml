@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/discovery_SearchView"
+        android:background="@color/searchview" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/discovery_text"
+        android:text="Suggest users"
+        android:textColor="@color/primaryColorDark"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/you_scrollview_scrollview"
+        android:layout_below="@+id/discovery_text">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/discovery_linearLayout"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout><!-- From: file:/Users/jizhizili/Dropbox/MobileDeveloping/myTime/ParseStarterProject/src/main/res/layout/discovery_tab.xml -->

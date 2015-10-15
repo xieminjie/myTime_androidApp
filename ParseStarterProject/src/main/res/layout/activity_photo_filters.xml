@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.parse.starter.PhotoFilters">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Photo Filters"
+        android:id="@+id/textView"
+        android:textSize="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#00796B"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="laststep"
+        android:id="@+id/laststep"
+        android:background="#00796B"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="15dp"
+        android:layout_alignTop="@+id/nextstep"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nextstep"
+        android:id="@+id/nextstep"
+        android:background="#00796B"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="15dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="19dp" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/filterimage"
+        android:maxHeight="300dp"
+        android:maxWidth="300dp"
+        android:minHeight="300dp"
+        android:minWidth="300dp"
+        android:layout_below="@+id/laststep"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />
+
+
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/nextstep"
+        android:layout_alignEnd="@+id/nextstep">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/invert"
+                android:minHeight="100dp"
+                android:minWidth="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/gray"
+                android:layout_toEndOf="@+id/gray" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gray"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:minHeight="100dp"
+                android:minWidth="100dp"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/old"
+                android:minHeight="100dp"
+                android:minWidth="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/original"
+                android:layout_toStartOf="@+id/original" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/original"
+                android:minHeight="100dp"
+                android:minWidth="100dp"
+                android:layout_alignTop="@+id/gray"
+                android:layout_alignLeft="@+id/nextstep"
+                android:layout_alignStart="@+id/nextstep" />
+
+
+
+
+            </LinearLayout>>
+
+
+        </HorizontalScrollView>>
+
+
+</RelativeLayout>

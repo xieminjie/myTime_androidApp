@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/signPhoto"
+    tools:context="com.example.xieminjie.instagram.Signup.SignPhoto">
+    <include android:id="@+id/login_bar" layout="@layout/login_bar"/>
+    <Button
+        android:id="@+id/signPhoto_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        android:textColor="@color/barTitleColor"
+        android:text="@string/signup_confirm_Btn"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="choose"
+        android:id="@+id/choose"
+        android:layout_alignBottom="@+id/signPhoto_Btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/login_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:minWidth="300dp"
+        android:minHeight="300dp"/>
+</RelativeLayout>
+<!-- From: file:/Users/jizhizili/Dropbox/MobileDeveloping/myTime/ParseStarterProject/src/main/res/layout/activity_sign_photo.xml -->

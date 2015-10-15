@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.parse.ParseImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/profile_imageView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/demo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/post_num"
+        android:layout_marginTop="19dp"
+        android:layout_alignTop="@+id/profile_imageView"
+        android:layout_toRightOf="@+id/profile_imageView"
+        android:layout_toEndOf="@+id/profile_imageView"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/follower_num"
+        android:layout_above="@+id/followers_textView"
+        android:layout_alignLeft="@+id/followers_textView"
+        android:layout_alignStart="@+id/followers_textView"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/following_num"
+        android:layout_marginRight="52dp"
+        android:layout_marginEnd="52dp"
+        android:layout_alignTop="@+id/follower_num"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="posts"
+        android:id="@+id/posts_textView"
+        android:layout_below="@+id/post_num"
+        android:layout_alignRight="@+id/post_num"
+        android:layout_alignEnd="@+id/post_num" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="followers"
+        android:id="@+id/followers_textView"
+        android:layout_marginRight="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_alignTop="@+id/posts_textView"
+        android:layout_toLeftOf="@+id/following_textView"
+        android:layout_toStartOf="@+id/following_textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="following"
+        android:id="@+id/following_textView"
+        android:layout_alignTop="@+id/followers_textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="28dp"
+        android:layout_marginEnd="28dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/profile_scrollview"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/profile_imageView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:id="@+id/profile_linear">
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

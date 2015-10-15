@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.parse.starter.TakePhoto">
+
+    <RelativeLayout
+        android:id="@+id/containerImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <SurfaceView
+            android:id="@+id/surfaceView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_alignBottom="@+id/gridImage"
+            android:layout_alignLeft="@+id/gridImage"
+            android:layout_alignEnd="@+id/gridImage"
+            android:layout_alignRight="@+id/gridImage"
+            android:layout_alignStart="@+id/gridImage"/>
+
+
+
+        <ImageView
+            android:id="@+id/gridImage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/grid"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true" />
+
+
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flash"
+            android:id="@+id/flash"
+            android:checked="false"
+            android:layout_alignTop="@+id/grid"
+            android:layout_toLeftOf="@+id/captureImage"
+            android:layout_toStartOf="@+id/captureImage" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grid"
+            android:id="@+id/grid"
+            android:checked="false"
+            android:layout_above="@+id/captureImage"
+            android:layout_toRightOf="@+id/captureImage"
+            android:layout_toEndOf="@+id/captureImage" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/captureImage"
+            android:src="@drawable/camera"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+</FrameLayout>
+<!-- From: file:/Users/jizhizili/Dropbox/MobileDeveloping/myTime/ParseStarterProject/src/main/res/layout/activity_take_photo.xml -->

@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xieminjie.instagram.Signup.Signup"
+    android:id="@+id/Signup"
+    android:background="@color/barTitleColor">
+    <include android:id="@+id/login_bar"
+        layout="@layout/login_bar"/>
+    <EditText
+        android:id="@+id/email_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email_register"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        />
+    <EditText
+        android:id="@+id/username_regsiter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username_regsiter"
+        android:layout_below="@+id/email_register"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        />
+    <EditText
+        android:id="@+id/password_regsiter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password_regsiter"
+        android:layout_below="@+id/username_regsiter"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        />
+    <Button
+        android:id="@+id/signup_confirm_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_regsiter"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/primaryColor"
+        android:textColor="@color/barTitleColor"
+        android:text="@string/signup_confirm_Btn"
+        android:textSize="20sp"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>
+<!-- From: file:/Users/jizhizili/Dropbox/MobileDeveloping/myTime/ParseStarterProject/src/main/res/layout/activity_signup.xml -->

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Photo"
+        android:id="@+id/takePhoto"
+        android:nestedScrollingEnabled="false"
+        android:layout_marginBottom="43dp"
+        android:background="#00796B"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="15dp"
+        android:layout_above="@+id/choose"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose From Gallery"
+        android:id="@+id/choose"
+        android:nestedScrollingEnabled="false"
+        android:background="#00796B"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="15dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <requestFocus
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receive by Bluetooth"
+        android:id="@+id/bt"
+        android:background="#00796B"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="15dp"
+        android:layout_below="@+id/switchBT"
+        android:layout_alignRight="@+id/choose"
+        android:layout_alignEnd="@+id/choose"
+        android:layout_marginTop="31dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn on Bluetooth"
+        android:id="@+id/switchBT"
+        android:checked="false"
+        android:layout_marginTop="34dp"
+        android:textColor="#00796B"
+        android:textSize="15dp"
+        android:layout_below="@+id/choose"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout><!-- From: file:/Users/jizhizili/Dropbox/MobileDeveloping/myTime/ParseStarterProject/src/main/res/layout/photo_tab.xml -->
